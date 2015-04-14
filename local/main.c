@@ -28,7 +28,7 @@ int main (int argc, const char * argv[]) {
 	char *value = (char*)malloc(900);
 	for (i = 0; i < 10000; i++) {
 		for (j = 0; j < 10000; j++) {
-		    int *ptr = (int*)key;
+			int *ptr = (int*)key;
 			*ptr = i;
 			*(ptr++) = j;
 			n = i + j;
@@ -56,5 +56,5 @@ int main (int argc, const char * argv[]) {
 			}
 		}
 	}
-    return 0;
+	return 0;
 }
